@@ -15,6 +15,6 @@ COPY ./nginx-custom.conf /etc/nginx/conf.d/default.conf
 RUN rm -rf /usr/share/nginx/html/*
 ## From ‘builder’ stage copy over the artifacts in dist folder to default nginx public folder
 COPY --from=node /app/dist/pixy /usr/share/nginx/html
-
+## Command for start service
 CMD ["nginx", "-g", "daemon off;"]
 
