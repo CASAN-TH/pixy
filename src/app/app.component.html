@@ -122,7 +122,7 @@
 <!--Navbar Mobile-->
 <div class="navbar navbar-expand-lg navbar-light white fixed-top d-lg-none row">
   <div class="col-2">
-    <button class="navbar-toggler" type="button" (click)="_toggleSidebar()">
+    <button class="navbar-toggler" type="button" (click)="toggleSidebar()">
       <span class="navbar-toggler-icon"></span>
     </button>
   </div>
@@ -144,7 +144,7 @@
 <ng-sidebar-container>
 
   <!-- A sidebar -->
-  <ng-sidebar class="orange" [(opened)]="_opened">
+  <ng-sidebar class="orange" [(opened)]="opened">
     <div class="row pl-4 pt-2">
       <div class="col-12">
         <!-- Collapsible content -->

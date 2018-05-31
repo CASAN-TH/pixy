@@ -11,11 +11,11 @@ export class AppComponent {
   public activeSlideIndex: number = 0;
   public noWrapSlides: boolean = false;
 
-  private _opened: boolean = false;
+  private opened: boolean = false;
  
-  private _toggleSidebar() {
-    this._opened = !this._opened;
-    console.log(this._opened);
+  private toggleSidebar() {
+    this.opened = !this.opened;
+    console.log(this.opened);
     
   }
 
