@@ -120,20 +120,20 @@
 </div>
 
 <!--Navbar Mobile-->
-<div class="navbar navbar-expand-lg navbar-light white fixed-top d-lg-none row">
+<div class="navbar navbar-expand-lg navbar-light pastel-yellow fixed-top d-lg-none row">
   <div class="col-2">
-    <button class="navbar-toggler" type="button" (click)="toggleSidebar()">
+    <button class="navbar-toggler mld-15" type="button" (click)="toggleSidebar()">
       <span class="navbar-toggler-icon"></span>
     </button>
   </div>
-  <div class="col-7 flex-center">
+  <div class="col-8 flex-center">
     <a href="#">
       <img src="../assets/images/logo/logo.png" height="30" alt="">
     </a>
   </div>
-  <div class="col-3 flex-right">
+  <div class="col-2 flex-right header-link">
     <a>
-      SIGN IN
+        SIGN IN / JOIN
     </a>
   </div>
 </div>
@@ -144,7 +144,7 @@
 <ng-sidebar-container>
 
   <!-- A sidebar -->
-  <ng-sidebar class="orange" [(opened)]="opened">
+  <ng-sidebar  [(opened)]="opened">
     <div class="row pl-4 pt-2">
       <div class="col-12">
         <!-- Collapsible content -->
@@ -190,19 +190,16 @@
         <mdb-carousel [isControls]="true" [animation]="'slide'">
           <mdb-slide *ngFor="let slide of slides; let index=index">
             <img class="d-block w-100" [src]="slide.image">
-            <!-- <div class="carousel-caption">
-                      <h4>Slide {{index}}</h4>
-                      <p>{{slide.text}}</p>
-                    </div> -->
           </mdb-slide>
         </mdb-carousel>
         <!--/.Carousel Wrapper-->
       </div>
     </div>
-    <main class="py-5">
+    <hr>
+    <main class="">
       <!-- Click Us & Signin -->
       <div class="row m-auto text-center">
-          <div class="col-md-5 ml-auto">
+          <div class="col-md-5 ml-auto py-3">
             <h2>Click Us!</h2>
             <div class="row m-auto">
                 <div class="col-3 pl-3">
@@ -236,7 +233,9 @@
   
               </div>
           </div>
-          <div class="col-md-1"></div>
+          <div class="col-md-1">
+            <hr class="d-block d-md-none d-lg-none">
+          </div>
           <div class="col-md-5 mr-auto">
             <h2>Sign In</h2>
             <h5 class="light-text">Sign in or join to make a beautiful photo gift.</h5>
@@ -254,8 +253,8 @@
             </div>
           </div>
         </div>
+        <hr>
       <div class="container">
-        
         <!-- What's Hot -->
         <div class="row text-center mt-5">
           <div class="col-md-12">
