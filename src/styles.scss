@@ -31,9 +31,21 @@ p {
     line-height: 1.5;
 }
 
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+}
 .carousel .carousel-control-prev-icon, .carousel .carousel-control-next-icon {
-    width: 5rem;
-    height: 5rem;
+    width: 8rem;
+    height: 8rem;
 }
 
 .ng-sidebar--left[_ngcontent-c2] {
